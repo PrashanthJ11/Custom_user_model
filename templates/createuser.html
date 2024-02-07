@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Noraml User Form</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="em">Email</label>
+            <input type="email" name="em" id="em"><br><br>
+            <label for="fn">First_name</label>
+            <input type="text" name="fn" id="fn"><br><br>
+            <label for="ln">Last_name</label>
+            <input type="text" name="ln" id="ln"><br><br>
+            <label for="pw">Password</label>
+            <input type="password" name="pw" id="pw"><br><br>
+
+            <input type="submit">
+        </form>
+
+    </center>
+</body>
+</html>
